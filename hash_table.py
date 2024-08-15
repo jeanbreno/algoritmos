@@ -19,7 +19,7 @@ class HashTable:
         Retorna:
         int: O índice na tabela hash.
         """
-        print(hash(key))
+    
         return hash(key) % self.size
 
     def insert(self, key, value):
