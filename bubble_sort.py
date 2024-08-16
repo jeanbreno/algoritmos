@@ -1,13 +1,4 @@
 def bubble_sort(arr):
-    """
-    Ordena uma lista usando o algoritmo Bubble Sort e imprime o progresso.
-
-    Args:
-        arr(list): Lista de números a ser ordenada.
-
-    Return:
-        arr(list): Lista de números ordenada.
-    """
     list_size = len(arr)
     print("Lista inicial:", arr)
 
