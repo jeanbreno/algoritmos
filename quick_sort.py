@@ -1,15 +1,4 @@
 def partition(arr, low, high):
-    """
-    Particiona a sublista em torno de um pivô e retorna o índice do pivô.
-
-    Parâmetros:
-        arr (list): A lista a ser particionada.
-        low (int): Índice inicial da sublista.
-        high (int): Índice final da sublista.
-
-    Retorna:
-        int: O índice do pivô após a partição.
-    """
     pivot = arr[high]
     i = low - 1
 
@@ -24,17 +13,6 @@ def partition(arr, low, high):
     return i + 1
 
 def quicksort(arr, low, high):
-    """
-    Implementa o algoritmo QuickSort.
-
-    Parâmetros:
-        arr (list): A lista a ser ordenada.
-        low (int): Índice inicial da sublista.
-        high (int): Índice final da sublista.
-
-    Retorna:
-        list: A lista ordenada.
-    """
     if low < high:
         indice_pivot = partition(arr, low, high)
         
