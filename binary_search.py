@@ -1,15 +1,4 @@
 def binary_search(arr, target):
-    """
-    Realiza a busca binária em uma lista ordenada.
-    Importante: A pesquisa binária só funciona em lista ordenada.
-
-    Parâmetros:
-        arr (list): A lista ordenada onde a busca será realizada.
-        target (int/float/str): O elemento que estamos procurando.
-
-    Retorna:
-        int: O índice do elemento encontrado na lista ou -1 se não for encontrado.
-    """
     left, right = 0, len(arr) - 1
     
     while left <= right:
