@@ -1,16 +1,6 @@
 from collections import deque
 
 def bfs(graph, start):
-    """
-    Realiza a pesquisa em largura em um grafo a partir de um nó inicial.
-
-    Parâmetros:
-    graph (dict): O grafo representado como um dicionário de listas adjacentes.
-    start (str/int): O nó inicial para a BFS.
-
-    Retorna:
-    list: Lista de nós visitados na ordem de visitação.
-    """
     visited = []  # Lista para manter os nós visitados
     queue = deque([start])  # Fila para os nós a serem explorados
     
