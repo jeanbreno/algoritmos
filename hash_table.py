@@ -1,35 +1,12 @@
 class HashTable:
     def __init__(self, size):
-        """
-        Inicializa a tabela hash com um determinado tamanho.
-
-        Parâmetros:
-        size (int): O tamanho da tabela hash.
-        """
         self.size = size
         self.table = [[] for _ in range(size)]  # Cria uma lista de listas (encadeamento)
 
-    def hash_function(self, key):
-        """
-        Função hash simples que converte a chave em um índice.
-
-        Parâmetros:
-        key (int/str): A chave que será transformada em índice.
-
-        Retorna:
-        int: O índice na tabela hash.
-        """
-    
+    def hash_function(self, key): 
         return hash(key) % self.size
 
     def insert(self, key, value):
-        """
-        Insere um par chave-valor na tabela hash.
-
-        Parâmetros:
-        key (int/str): A chave para o valor.
-        value (any): O valor associado à chave.
-        """
         index = self.hash_function(key)
         print(f"Inserindo '{value}' com a chave '{key}' no índice {index}")
 
@@ -45,15 +22,6 @@ class HashTable:
         print(f"Chave '{key}' e valor '{value}' inseridos na lista no índice {index}")
 
     def search(self, key):
-        """
-        Busca um valor na tabela hash dado uma chave.
-
-        Parâmetros:
-        key (int/str): A chave para procurar o valor.
-
-        Retorna:
-        any: O valor associado à chave, ou None se não for encontrado.
-        """
         index = self.hash_function(key)
         print(f"Procurando pela chave '{key}' no índice {index}")
 
@@ -66,12 +34,6 @@ class HashTable:
         return None
 
     def delete(self, key):
-        """
-        Remove um par chave-valor da tabela hash.
-
-        Parâmetros:
-        key (int/str): A chave a ser removida.
-        """
         index = self.hash_function(key)
         print(f"Removendo a chave '{key}' no índice {index}")
 
